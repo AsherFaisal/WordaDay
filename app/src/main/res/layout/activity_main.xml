@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="Recent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="Today's Letter"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_marginBottom="53dp"
+        android:layout_marginEnd="234dp"
+        android:layout_marginStart="16dp"
+        android:onClick="pl"
+        android:text="K"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="370dp"
+        android:layout_height="134dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Prev_Btn1"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:text="K"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textSize="70sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="73dp" />
+
+            <Button
+                android:id="@+id/Prev_Btn2"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:text="K"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textSize="70sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="73dp" />
+
+            <Button
+                android:id="@+id/Prev_Btn3"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:text="K"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textSize="70sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="73dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</android.support.constraint.ConstraintLayout>
